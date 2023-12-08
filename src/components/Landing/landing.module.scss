@@ -1,0 +1,19 @@
+.catTitle {
+  background: #e815b7;
+  background: linear-gradient(45deg, #4b97f3, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: 700;
+}
+
+.gradientBall {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(45deg, #4b97f3, rgba(255, 157, 0, 0.667));
+  position: absolute;
+  z-index: -1;
+  filter: blur(7rem);
+  opacity: 0.8;
+  border-radius: 50%;
+  top: 200px;
+}
