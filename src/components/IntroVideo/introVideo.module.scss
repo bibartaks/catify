@@ -1,0 +1,41 @@
+.introVideoBgBall {
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(95deg, #4b97f3, rgba(224, 168, 77, 0.667));
+  position: absolute;
+  // z-index: -1;
+  right: 0;
+  filter: blur(12rem);
+}
+
+.spWord {
+  background: #e815b7;
+  background: linear-gradient(45deg, #4b97f3, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: 700;
+}
+
+.videoBg {
+  position: relative;
+}
+
+.videoBg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+  background: linear-gradient(
+    45deg,
+    #4b97f3,
+    rgb(0, 0, 255),
+    rgba(255, 157, 0, 0.667),
+    #f5f8fb,
+    #f5f8fb,
+    // white
+  );
+  opacity: 0.7; /* Adjust the opacity as needed */
+}

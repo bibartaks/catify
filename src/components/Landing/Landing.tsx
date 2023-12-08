@@ -6,7 +6,7 @@ import styles from "./landing.module.scss"
 
 export default function Landing() {
   return (
-    <header className={`h-[calc(100vh-200px)]`}>
+    <header className={`h-[calc(100vh-50px)]`}>
       <div className={styles.gradientBall}></div>
       <div className="h-[100%] flex flex-col  justify-center  items-center  max-w-[1050px] mx-auto">
         <h1
