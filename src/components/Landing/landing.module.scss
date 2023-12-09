@@ -9,11 +9,24 @@
 .gradientBall {
   width: 800px;
   height: 800px;
-  background: linear-gradient(45deg, #4b97f3, rgba(255, 157, 0, 0.667));
+  // background: linear-gradient(45deg, #4b97f3, rgba(255, 157, 0, 0.667));
+  background: linear-gradient(
+    45deg,
+    #9400ff,
+    // rgb(0, 0, 255),
+    #687eff,
+    // #687eff,
+    // rgba(255, 157, 0, 0.667),
+    // #6528f7,
+    #ffa3fd,
+    #ffa3fd,
+    // #f5f8fb,
+    // white
+  );
   position: absolute;
   z-index: -1;
   filter: blur(6rem);
-  opacity: 0.8;
+  opacity: 0.5;
   border-radius: 50%;
-  top: 200px;
+  top: 100px;
 }

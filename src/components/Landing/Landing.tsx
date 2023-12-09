@@ -17,7 +17,7 @@ export default function Landing() {
         </h1>
         <p
           className="max-w-[650px] mx-auto text-center mb-8
-         leading-[200%]"
+         leading-[200%] font-medium"
         >
           With our intuitive and powerfull platform you can easily adopt your
           cat without any hassle and find various types of cats with just a

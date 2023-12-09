@@ -1,12 +1,12 @@
-.introVideoBgBall {
-  width: 500px;
-  height: 500px;
-  background: linear-gradient(95deg, #4b97f3, rgba(224, 168, 77, 0.667));
-  position: absolute;
-  // z-index: -1;
-  right: 0;
-  filter: blur(12rem);
-}
+// .introVideoBgBall {
+//   width: 500px;
+//   height: 500px;
+//   background: linear-gradient(95deg, #4b97f3, rgba(224, 168, 77, 0.667));
+//   position: absolute;
+//   // z-index: -1;
+//   right: 0;
+//   filter: blur(12rem);
+// }
 
 .spWord {
   background: #e815b7;
@@ -16,12 +16,17 @@
   font: 700;
 }
 
-.videoBg {
+.videoContainer {
+  padding: 1.5rem 0;
+  max-width: 1050px;
+  margin: auto;
+  border-radius: 20px;
   position: relative;
 }
 
-.videoBg:before {
+.videoContainer:before {
   content: "";
+  // border-radius: 50px;
   position: absolute;
   top: 0;
   right: 0;
@@ -30,12 +35,45 @@
   z-index: -1; /* Ensure the pseudo-element is behind the content */
   background: linear-gradient(
     45deg,
-    #4b97f3,
+    // #9400ff,
+    // rgb(0, 0, 255),
+    // #687eff,
+    // // rgba(255, 157, 0, 0.667),
+    // #6528f7,
+    // #ffa3fd // #f5f8fb,
+    // // white
+    white,
+    white
+  );
+  opacity: 0.5; /* Adjust the opacity as needed */
+}
+
+.videoBg {
+  // padding: 3rem 0;
+  margin: auto;
+  // border-radius: 50px;
+  position: relative;
+}
+
+.videoBg:before {
+  content: "";
+
+  border-radius: 50;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+  background: linear-gradient(
+    45deg,
+    #9400ff,
     rgb(0, 0, 255),
-    rgba(255, 157, 0, 0.667),
-    #f5f8fb,
-    #f5f8fb,
+    #687eff,
+    // rgba(255, 157, 0, 0.667),
+    #6528f7,
+    #ffa3fd // #f5f8fb,
     // white
   );
-  opacity: 0.7; /* Adjust the opacity as needed */
+  opacity: 0.5; /* Adjust the opacity as needed */
 }
