@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { montserrat } from "@/app/fonts"
 import React from "react"
 import styles from "./keyCapabilities.module.scss"
