@@ -1,61 +1,17 @@
-"use client"
+import Login from "@/components/Login/Login"
+import { createServerComponentClient } from "@supabase/auth-helpers-nextjs"
+import { cookies } from "next/headers"
+import { redirect } from "next/navigation"
+import React from "react"
 
-import { createClientComponentClient } from "@supabase/auth-helpers-nextjs"
-import { useRouter } from "next/navigation"
-import { useState } from "react"
-import { Auth } from "@supabase/auth-ui-react"
+export default async function page() {
+  const supabase = createServerComponentClient({ cookies })
+  const {
+    data: { session },
+  } = await supabase.auth.getSession()
 
-import {
-  // Import predefined theme
-  ThemeSupa,
-} from "@supabase/auth-ui-shared"
-
-export default function Login() {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const router = useRouter()
-  const supabase = createClientComponentClient()
-
-  const handleSignUp = async () => {
-    await supabase.auth.signUp({
-      email,
-      password,
-      options: {
-        emailRedirectTo: `${location.origin}/auth/callback`,
-      },
-    })
-    router.refresh()
+  if (session) {
+    redirect("/")
   }
-
-  const handleSignIn = async () => {
-    await supabase.auth.signInWithPassword({
-      email,
-      password,
-    })
-    router.refresh()
-  }
-
-  const handleSignOut = async () => {
-    await supabase.auth.signOut()
-    router.refresh()
-  }
-
-  return (
-    <>
-      <input
-        name="email"
-        onChange={e => setEmail(e.target.value)}
-        value={email}
-      />
-      <input
-        type="password"
-        name="password"
-        onChange={e => setPassword(e.target.value)}
-        value={password}
-      />
-      <button onClick={handleSignUp}>Sign up</button>
-      <button onClick={handleSignIn}>Sign in</button>
-      <button onClick={handleSignOut}>Sign out</button>
-    </>
-  )
+  return <Login />
 }
