@@ -6,27 +6,30 @@
   font: 700;
 }
 
-.gradientBall {
-  width: 800px;
-  height: 800px;
-  // background: linear-gradient(45deg, #4b97f3, rgba(255, 157, 0, 0.667));
-  background: linear-gradient(
-    45deg,
-    #9400ff,
-    // rgb(0, 0, 255),
-    #687eff,
-    // #687eff,
-    // rgba(255, 157, 0, 0.667),
-    // #6528f7,
-    #ffa3fd,
-    #ffa3fd,
-    // #f5f8fb,
-    // white
-  );
-  position: absolute;
-  z-index: -1;
-  filter: blur(6rem);
-  opacity: 0.5;
-  border-radius: 50%;
-  top: 100px;
-}
+// .gradientBall {
+//   width: 500px;
+//   height: 500px;
+//   // background: linear-gradient(45deg, #4b97f3, rgba(255, 157, 0, 0.667));
+//   background: linear-gradient(45deg, #004efc, #004efc);
+//   position: absolute;
+//   z-index: -1;
+//   filter: blur(8rem);
+//   opacity: 0.6;
+//   border-radius: 50%;
+//   top: 200px;
+//   left: 200px;
+// }
+
+// .gradientBall2 {
+//   width: 500px;
+//   height: 500px;
+//   // background: linear-gradient(45deg, #4b97f3, rgba(255, 157, 0, 0.667));
+//   background: linear-gradient(45deg, #8237ec, #8237ec);
+//   position: absolute;
+//   z-index: -1;
+//   filter: blur(8rem);
+//   opacity: 0.6;
+//   border-radius: 50%;
+//   top: 100px;
+//   left: 500px;
+// }

@@ -19,11 +19,11 @@ export default async function Home() {
 
   return (
     <>
-      <Landing />
       <div className={styles.videoBg}>
-        <IntroVideo />
-        <KeyCapabilities />
+        <Landing />
       </div>
+      <IntroVideo />
+      <KeyCapabilities />
     </>
   )
 }

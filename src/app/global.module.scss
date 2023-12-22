@@ -8,7 +8,6 @@
 .videoBg:before {
   content: "";
 
-  border-radius: 50;
   position: absolute;
   top: 0;
   right: 0;
@@ -16,14 +15,15 @@
   left: 0;
   z-index: -1; /* Ensure the pseudo-element is behind the content */
   background: linear-gradient(
-    45deg,
+    35deg,
     #9400ff,
-    rgb(0, 0, 255),
+    rgba(0, 0, 255, 0.719),
     #687eff,
     // rgba(255, 157, 0, 0.667),
     #6528f7,
-    #ffa3fd // #f5f8fb,
-    // white
+    #ffa3fd,
+    white
   );
-  opacity: 0.5; /* Adjust the opacity as needed */
+
+  opacity: 0.4; /* Adjust the opacity as needed */
 }
