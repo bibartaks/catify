@@ -21,7 +21,7 @@ export default function KeyCapabilities() {
               width={300}
               height={150}
               alt="lol"
-              className="w-[100%] h-[auto] block mx-auto"
+              className="w-[100%] h-[auto] block mx-auto rounded-t-lg"
             />
             <h1
               className={` ${montserrat.className} text-[1.3rem] font-semibold mb-0 px-2 pt-3`}
@@ -39,7 +39,7 @@ export default function KeyCapabilities() {
               width={300}
               height={150}
               alt="lol"
-              className="w-[100%] h-[auto] block mx-auto"
+              className="w-[100%] h-[auto] block mx-auto rounded-t-lg"
             />
             <h1
               className={` ${montserrat.className} text-[1.3rem] font-semibold mb-0 px-2 pt-3`}
@@ -57,7 +57,7 @@ export default function KeyCapabilities() {
               width={300}
               height={150}
               alt="lol"
-              className="w-[100%] h-[auto] block mx-auto"
+              className="w-[100%] h-[auto] block mx-auto rounded-t-lg"
             />
             <h1
               className={` ${montserrat.className} text-[1.3rem] font-semibold mb-0 px-2 pt-3`}
@@ -75,7 +75,7 @@ export default function KeyCapabilities() {
               width={300}
               height={150}
               alt="lol"
-              className="w-[100%] h-[auto] block mx-auto"
+              className="w-[100%] h-[auto] block mx-auto rounded-t-lg"
             />
             <h1
               className={` ${montserrat.className} text-[1.3rem] font-semibold mb-0 px-2 pt-3`}
