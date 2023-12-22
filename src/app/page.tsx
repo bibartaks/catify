@@ -6,6 +6,7 @@ import styles from "./global.module.scss"
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs"
 import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
+import Feed from "./feed/page"
 
 export default async function Home() {
   const supabase = createServerComponentClient({ cookies })
@@ -16,7 +17,9 @@ export default async function Home() {
   if (!session) {
     redirect("/unauthenticated")
   }
-
+  if (session) {
+    redirect("/feed")
+  }
   return (
     <>
       <div className={styles.videoBg}>

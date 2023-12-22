@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar/Navbar"
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs"
 import { cookies } from "next/headers"
 import { redirect } from "next/navigation"
+import UserNavbar from "@/components/UserNavbar/UserNavbar"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -26,8 +27,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#F5F8FB]`}>
-        {/* {!session ? <Navbar /> : null} */}
-        <Navbar />
+        {!session ? <Navbar /> : <UserNavbar />}
         {children}
       </body>
     </html>
